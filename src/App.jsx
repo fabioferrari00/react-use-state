@@ -50,7 +50,7 @@ function App() {
             {/* ciclo l'array languages per stampare l'elenco dei pulsanti */}
             {languages.map((language) => {
               return (
-                <button className="btn btn-primary me-3">{language.title}</button>
+                <button className="btn btn-primary me-3" onClick={() => setLanguage(language)}>{language.title}</button>
               )
             })}
           </div>
