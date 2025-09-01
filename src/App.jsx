@@ -56,11 +56,11 @@ function App() {
           </div>
           {/* creo la card per ogni linguaggio */}
           <div className="col-12 mt-3">
-            <div class="card">
-              <div class="card-header">
+            <div className="card">
+              <div className="card-header">
                 {language.title}
               </div>
-              <div class="card-body">
+              <div className="card-body">
                 <div>
                   <p>{language.description}</p>
                 </div>
