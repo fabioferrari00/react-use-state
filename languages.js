@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const languages = [
   {
     id: 1,
@@ -32,28 +30,3 @@ const languages = [
     description: "ReactJS è una libreria JavaScript per costruire interfacce utente, in particolare applicazioni a pagina singola. Consente agli sviluppatori di creare componenti UI riutilizzabili e di gestire efficacemente lo stato dell'applicazione."
   }
 ];
-
-function App() {
-  return (
-    <>
-      <header>
-        <div className="p-5">
-          <h1>Learn web development</h1>
-        </div>
-      </header>
-      <div className="container">
-        <div className="row">
-          <div className="col-12">
-            {languages.map((language) => {
-              return (
-                <button className="btn btn-primary me-3">{language.title}</button>
-              )
-            })}
-          </div>
-        </div>
-      </div>
-    </>
-  )
-}
-
-export default App;
