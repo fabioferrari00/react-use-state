@@ -34,6 +34,9 @@ const languages = [
 ];
 
 function App() {
+  //definisco la variabile di stato per il linguaggio selezionato
+  const [language, setLanguage] = useState(languages[0]);
+
   return (
     <>
       <header>
@@ -44,11 +47,25 @@ function App() {
       <div className="container">
         <div className="row">
           <div className="col-12">
+            {/* ciclo l'array languages per stampare l'elenco dei pulsanti */}
             {languages.map((language) => {
               return (
                 <button className="btn btn-primary me-3">{language.title}</button>
               )
             })}
+          </div>
+          {/* creo la card per ogni linguaggio */}
+          <div className="col-12 mt-3">
+            <div class="card">
+              <div class="card-header">
+                {language.title}
+              </div>
+              <div class="card-body">
+                <div>
+                  <p>{language.description}</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
